@@ -1,0 +1,33 @@
+{
+  "name": "@vitest/example-react",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:browser": "vitest --workspace=vitest.workspace.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/browser": "^2.1.0",
+    "@vitest/ui": "latest",
+    "date-fns": "2.30.0",
+    "date-fns-v3": "npm:date-fns@3.6.0",
+    "jsdom": "^25.0.0",
+    "playwright": "^1.47.0",
+    "vite": "latest",
+    "vitest": "latest",
+    "vitest-browser-react": "^0.0.1"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}
